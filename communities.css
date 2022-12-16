@@ -1,0 +1,429 @@
+* 
+  body {
+    font-size: 14px;
+  }
+  .screen_bg { 
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border:2px solid black;
+    margin: auto auto;
+    width: 430px;
+    height: 930px;
+    background:white;
+    opacity: 1;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+  }
+  .divider_upper {
+    width: 398px;
+    height: 4px;
+    background: rgba(0,0,0,0.10000000149011612);
+    opacity: 1;
+    position: absolute;
+    top: 128px;
+    left: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .divider_lower {
+    width: 398px;
+    height: 4px;
+    background: rgba(0,0,0,0.10000000149011612);
+    opacity: 1;
+    position: absolute;
+    top: 454px;
+    left: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .header {
+    width: 258px;
+    color: black;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+  }
+  .edit_icon {
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 380px;
+  }
+  .back_icon {
+    width: 40px;
+    height: 20px;
+    opacity: 1;
+    position: absolute;
+    top: 29px;
+    left: 5%;
+  }
+  .furnald_bg {
+    width: 440px;
+    height: 136px;
+    background: rgba(217,217,217,0.30000001192092896);
+    opacity: 1;
+    position: absolute;
+    top: 486px;
+    left: 0px;
+
+  }
+  .furnald_name {
+    width: 175px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 515px;
+    left: 121px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .furnald_members {
+    width: 99px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 579px;
+    left: 301px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .container_for_icon {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    position: absolute;
+    top: 503px;
+    left: 28px;
+    overflow: hidden;
+  }
+  .group_circle {
+    width: 80px;
+    height: 80px;
+    background: lightgray;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .group_icon {
+    width: 50px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 1px solid rgba(0,0,0,0);
+  }
+  .UI_bg {
+    width: 440px;
+    height: 136px;
+    background: rgba(217,217,217,0.30000001192092896);
+    opacity: 1;
+    position: absolute;
+    top: 649px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .UI_name {
+    width: 133px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 676px;
+    left: 115px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .UI_members {
+    width: 98px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 740px;
+    left: 295px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .container_for_icon2 {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    position: absolute;
+    top: 664px;
+    left: 22px;
+    overflow: hidden;
+  }
+  .join_text {
+    width: 132px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 282px;
+    left: 29px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .access_code_container {
+    width: 175px;
+    height: 35px;
+    top: 275px;
+    left: 167px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 10%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .access_code {
+    width: 175px;
+    height: 40px;
+    width: 164px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .join_container {
+    width: 55px;
+    height: 17px;
+    top: 265px;
+    left: 270px;
+    background: rgba(28,44,100,1);
+    color: rgba(255,255,255,1);
+    padding: 10px 34px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  .join {
+    width: 30px;
+    height:40px;
+    color: white;
+    position: absolute;
+    top: 9px;
+    left: 75px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .access_code_container {
+    width: 175px;
+    height: 35px;
+    top: 275px;
+    left: 167px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 10%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .search_container {
+    top: 178px;
+    left: 32px;
+    width: 305px;
+    height: 35px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .search_text {
+    top: 7px;
+    left: 7px;
+    width: 265px;
+    color: black;
+    position: absolute;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .search_button {
+    width: 55px;
+    height: 17px;
+    background: rgba(28,44,100,1);
+    padding: 10px 34px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 168px;
+    left: 270px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  .search {
+    width: 50px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 9px;
+    left: 65px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .create_community_container {
+    width: 376px;
+    height: 20px;
+    background: rgba(28,44,100,1);
+    padding: 10px 15px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 373px;
+    left: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .create_community_text {
+    width: 194px;
+    color: white;
+    position: absolute;
+    top: 7px;
+    left: 110px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .bottom_bar {
+    border-top: 2px solid lightgray;
+    width: 440px;
+    height: 76px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    z-index:0;
+    top: 862px;
+    left: 0px;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .bottom_left_button{
+    width: 120px;
+    height: 85px;
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    border-right: 2px solid lightgray;
+  }
+  .bottom_right_button{
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    border-left: 2px solid lightgray;
+    left: 320px;
+  }
+  .communities_icon {
+    width: 60px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    border: 1px solid rgba(0,0,0,0);
+  }
+  .chat_icon {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    border: 1px solid rgba(0,0,0,0);
+  }
+  .map_button {
+    width: 55px;
+    height: 55px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 845px;
+    left: 190px;
+    border-radius: 50%;
+    border: 2px lightgrey solid;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .map_icon {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 855px;
+    left: 200px;
+  }

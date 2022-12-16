@@ -1,0 +1,375 @@
+              
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen_bg { 
+      padding-left:5px;
+      padding-right:5px;
+      padding-top:5px;
+      padding-bottom: 5px;
+      border:2px solid black;
+      margin: auto auto;
+      width: 430px;
+      height: 930px;
+      background:white;
+      opacity: 1;
+      position: relative;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .top_bar{
+      border-bottom: 2px solid lightgray;
+      width: 426px;
+      height: 70px;
+      background: white;
+      opacity: 1;
+      position: absolute;
+      z-index:0;
+      left: 0px;
+      top:0px;
+      overflow: hidden;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .map {
+      width: 425px;
+      height: 790px;
+      opacity: 1;
+      position: absolute;
+      top: 70px;
+      left:0px;
+    }
+    .search_icon {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+      position: absolute;
+      top: 27px;
+      left: 340px;
+    }
+    .add_post_icon {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+      position: absolute;
+      top: 27px;
+      left: 383px;
+    }
+    .profile_icon {
+      width: 35px;
+      height: 35px;
+      opacity: 1;
+      position: absolute;
+      top: 27px;
+      left: 30px;
+    }
+    .key_box {
+      width: 142px;
+      height: 70px;
+      background:rgba(27,43,99,0.8999999761581421);
+      opacity: 1;
+      position: absolute;
+      top: 784px;
+      left: 16px;
+    }
+
+    .lost_circle {
+      width: 16px;
+      height: 15px;
+      border: 2px yellow solid;
+      position: absolute;
+      top: 15px;
+      left: 16px;
+      border-radius: 50%;
+    }
+    .found_square {
+      width: 16px;
+      height: 15px;
+      position: absolute;
+      top: 41px;
+      left: 16px;
+      border: 2px solid rgba(255,0,0,1);
+      border-top-left-radius: 1px;
+      border-top-right-radius: 1px;
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+      overflow: hidden;
+    }
+    .lost_text {
+      width: 49px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 16px;
+      left: 47px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 15px;
+      opacity: 1;
+      text-align: left;
+    }
+    .found_text {
+      width: 54px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 42px;
+      left: 47px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 15px;
+      opacity: 1;
+      text-align: left;
+    }
+    .post_1 {
+      width: 26px;
+      height: 26px;
+      opacity: 1;
+      position: absolute;
+      top: 375px;
+      left: 86px;
+      overflow: hidden;
+    }
+    .circle {
+      width: 26px;
+      height: 26px;
+      background: rgba(255,214,0,1);
+      border: 1px solid rgba(0,0,0,0.30000001192092896);
+      opacity: 1;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .text {
+      width: 6px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 5px;
+      left: 9px;
+      font-family: Inter;
+      font-weight: Bold;
+      font-size: 15px;
+      opacity: 1;
+      text-align: left;
+    }
+    .icon{
+      height:17px;
+      width: 17px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      font-family: Inter;
+      font-weight: Bold;
+      font-size: 15px;
+      opacity: 1;
+      text-align: left;
+    }
+    .post_2 {
+      width: 26px;
+      height: 26px;
+      opacity: 1;
+      position: absolute;
+      top: 668px;
+      left: 262px;
+      overflow: hidden;
+    
+    }
+    .v63_145 {
+      width: 26px;
+      height: 26px;
+      background: rgba(255,214,0,1);
+      opacity: 1;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border-radius: 50%;
+    }
+    .v63_146 {
+      width: 6px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 5px;
+      left: 9px;
+      font-family: Inter;
+      font-weight: Bold;
+      font-size: 15px;
+      opacity: 1;
+      text-align: left;
+    }
+    .post_3 {
+      width: 22px;
+      height: 22px;
+      opacity: 1;
+      position: absolute;
+      top: 604px;
+      left: 175px;
+      overflow: hidden;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .box {
+      width: 22px;
+      height: 22px;
+      background: rgba(255,0,0,1);
+      opacity: 1;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border: 1px solid rgba(0,0,0,0.30000001192092896);
+      border-top-left-radius: 1px;
+      border-top-right-radius: 1px;
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+    }
+  .post {
+    width: 225px;
+    height: 183px;
+    background: rgba(255,233,117,1);
+    opacity: 1;
+    position: absolute;
+    top: 362px;
+    left: 118px;
+    border: 1px solid rgba(0,0,0,0.30000001192092896);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .post_text {
+    width: 204px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 380px;
+    left: 132px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 10px;
+    opacity: 1;
+    text-align: left;
+  }
+  .type_box {
+    width: 199px;
+    height: 32px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 477px;
+    left: 131px;
+    border: 1px solid rgba(0,0,0,0.5);
+  }
+  .type_text {
+    width: 56px;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 482px;
+    left: 137px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 10px;
+    opacity: 1;
+    text-align: left;
+  }
+  .connect_button {
+    width: 80px;
+    height: 26px;
+    background: rgba(28,44,100,1);
+    opacity: 1;
+    position: absolute;
+    top: 514px;
+    left: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .connect_text {
+    width: 40px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 7px;
+    left: 22%;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 10px;
+    opacity: 1;
+    text-align: left;
+  }
+  .bottom_bar {
+      border-top: 2px solid lightgray;
+      width: 426px;
+      height: 66px;
+      background: white;
+      opacity: 1;
+      position: absolute;
+      z-index:0;
+      top: 860px;
+      left: 0px;
+      overflow: hidden;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .bottom_left_button{
+      width: 120px;
+      height: 85px;
+      position: absolute;
+      z-index: 1;
+      background-color:white;
+      border-right: 2px solid lightgray;
+    }
+    .bottom_right_button{
+      width: 120px;
+      height: 90px;
+      position: absolute;
+      z-index: 1;
+      background-color:white;
+      border-left: 2px solid lightgray;
+      left: 320px;
+    }
+    .communities_icon {
+      width: 60px;
+      height: 40px;
+      opacity: 1;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      border: 1px solid rgba(0,0,0,0);
+    }
+    .chat_icon {
+      width: 40px;
+      height: 40px;
+      opacity: 1;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      border: 1px solid rgba(0,0,0,0);
+    }
+    .map_button {
+      width: 55px;
+      height: 55px;
+      background: white;
+      opacity: 1;
+      position: absolute;
+      z-index: 1;
+      top: 845px;
+      left: 190px;
+      border-radius: 50%;
+      border: 2px lightgrey solid;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .map_icon {
+      width: 40px;
+      height: 40px;
+      opacity: 1;
+      position: absolute;
+      z-index: 1;
+      top: 855px;
+      left: 200px;
+    }
+
