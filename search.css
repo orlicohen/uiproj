@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen_bg { 
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border:2px solid black;
+    margin: auto auto;
+    width: 430px;
+    height: 930px;
+    background:white;
+    opacity: 1;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .map {
+    width: 425px;
+    height: 790px;
+    opacity: 1;
+    position: absolute;
+    top: 70px;
+    left:0px;
+  }
+  .top_bar{
+    border-bottom: 2px solid lightgray;
+    width: 426px;
+    height: 72px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    z-index:0;
+    left: 0px;
+    top:0px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .search_icon {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 27px;
+    left: 340px;
+  }
+  .add_post_icon {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 27px;
+    left: 383px;
+  }
+  .profile_icon {
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+  }
+  .search_1 {
+    width: 428px;
+    height: 90px;
+    border-bottom: 2px solid lightgray;
+    position: absolute;
+    top: 40px;
+    left: -0.5px;
+    overflow: hidden;
+  }
+  .search_2 {
+    width: 428px;
+    height: 100px;
+    border-bottom: 2px solid lightgray;
+    position: absolute;
+    top: 130px;
+    left: -0.5px;
+    overflow: hidden;
+  }
+  .search_3 {
+    width: 428px;
+    height: 100px;
+    border-bottom: 2px solid lightgray;
+    position: absolute;
+    top: 230px;
+    left: -0.5px;
+    overflow: hidden;
+  }
+  .item_text{
+    width: 428px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 17px;
+    left: 10%;
+    top: 40%;
+    opacity: 1;
+    text-align: left;
+  }
+  .date_and_time{
+    width: 428px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 12px;
+    top: 75%;
+    right: 7%;
+    opacity: 1;
+    text-align: right;
+  }
+  .add_post{
+    width: 428px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 13px;
+    top: 93%;
+    right: 7%;
+    opacity: 1;
+    text-align: right;
+  }
+  .post{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 92.5%;
+    right: 1%;
+  }
+  .key_box {
+    width: 142px;
+    height: 70px;
+    background:rgba(27,43,99,0.8999999761581421);
+    opacity: 1;
+    position: absolute;
+    top: 784px;
+    left: 16px;
+  }
+  .v63_125 {
+    width: 142px;
+    height: 70px;
+    background: rgba(27,43,99,0.75);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .lost_circle {
+    width: 16px;
+    height: 15px;
+    border: 2px yellow solid;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    border-radius: 50%;
+  }
+  .found_square {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    top: 41px;
+    left: 16px;
+    border: 2px solid rgba(255,0,0,1);
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    overflow: hidden;
+  }
+  .lost_text {
+    width: 49px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 16px;
+    left: 47px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .found_text {
+    width: 54px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 42px;
+    left: 47px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .post_1 {
+    width: 26px;
+    height: 26px;
+    opacity: 1;
+    position: absolute;
+    top: 375px;
+    left: 86px;
+    overflow: hidden;
+  }
+  .circle {
+    width: 26px;
+    height: 26px;
+    background: rgba(255,214,0,1);
+    border: 1px solid rgba(0,0,0,0.30000001192092896);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .text{
+    width: 6px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .icon{
+    height:17px;
+    width: 17px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .post_2 {
+    width: 26px;
+    height: 26px;
+    opacity: 1;
+    position: absolute;
+    top: 668px;
+    left: 262px;
+    overflow: hidden;
+  
+  }
+  .v63_145 {
+    width: 26px;
+    height: 26px;
+    background: rgba(255,214,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v63_146 {
+    width: 6px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .post_3 {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+    position: absolute;
+    top: 604px;
+    left: 175px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .box {
+    width: 22px;
+    height: 22px;
+    background: rgba(255,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(0,0,0,0.30000001192092896);
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+  }
+  .overlay {
+    width: 428px;
+    height: 370px;
+    background:rgba(27,43,99,0.8999999761581421);
+    opacity: 1;
+    position: absolute;
+    top: 70px;
+    left: -0.5px;
+    overflow: hidden;
+  }
+  .title {
+    width: 71px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 148px;
+    left: 27px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .tags {
+    width: 87px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 190px;
+    left: 27px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .security {
+    width: 305px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 240px;
+    left: 51px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .new_post {
+    width: 387px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 93px;
+    left: 27px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .choose {
+    width: 387px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 130px;
+    left: 27px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .lost_item_button {
+    width: 114px;
+    height: 30px;
+    background: rgba(255,232,27,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 161px;
+    left: 27px;
+    border: 2px solid rgba(255,255,255,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .post_button {
+    width: 114px;
+    height: 30px;
+    background: rgba(217,217,217,0);
+    opacity: 1;
+    position: absolute;
+    top: 443px;
+    left: 269px;
+    border: 2px solid rgba(255,255,255,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .found_item_button {
+    width: 114px;
+    height: 30px;
+    background: rgba(217,217,217,0);
+    opacity: 1;
+    position: absolute;
+    top: 161px;
+    left: 163px;
+    border: 2px solid rgba(255,255,255,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .button_text {
+    width: 66px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 5px;
+    left:20%;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+  }
+  .search_bar {
+    width: 370px;
+    height: 30px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    left: 7%;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 16px;
+    text-indent: 20px;
+    padding: 3px;
+    color: black;
+    border: 2px solid rgba(255,255,255,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .select_bar {
+    width: 257px;
+    height: 30px;
+    background: rgba(217,217,217,0);
+    opacity: 1;
+    position: absolute;
+    top: 257px;
+    left: 135px;
+    border: 2px solid rgba(255,255,255,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .date {
+    width: 46px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 419px;
+    left: 27px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .date_bar {
+    width: 107px;
+    height: 30px;
+    background: rgba(217,217,217,0);
+    opacity: 1;
+    position: absolute;
+    top: 416px;
+    left: 77px;
+    border: 2px solid rgba(255,255,255,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .security_bar {
+    width: 363px;
+    height: 64px;
+    background: rgba(217,217,217,0);
+    opacity: 1;
+    position: absolute;
+    top: 332px;
+    left: 27px;
+    border: 2px solid rgba(255,255,255,1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+  }
+  .item_title {
+    width: 116px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 218px;
+    left: 163px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .search_text {
+    width: 38px;
+    color: black;
+    position: absolute;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+    border: 1px solid rgba(255,255,255,1);
+  }
+  .tag_2 {
+    width: 105px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 263px;
+    left: 215px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+    border: 1px solid rgba(255,255,255,1);
+  }
+  .security_text {
+    width: 307px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 347px;
+    left: 51px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .date_text {
+    width: 80px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 422px;
+    left: 91px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .bottom_bar {
+    border-top: 2px solid lightgray;
+    width: 426px;
+    height: 66px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    z-index:0;
+    top: 860px;
+    left: 0px;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .bottom_left_button{
+    width: 120px;
+    height: 85px;
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    border-right: 2px solid lightgray;
+  }
+  .bottom_right_button{
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    border-left: 2px solid lightgray;
+    left: 320px;
+  }
+  .communities_icon {
+    width: 60px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    border: 1px solid rgba(0,0,0,0);
+  }
+  .chat_icon {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    border: 1px solid rgba(0,0,0,0);
+  }
+  .map_button {
+    width: 55px;
+    height: 55px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 845px;
+    left: 190px;
+    border-radius: 50%;
+    border: 2px lightgrey solid;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .map_icon {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 855px;
+    left: 200px;
+  }
