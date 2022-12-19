@@ -4,17 +4,23 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="./home_page.css" rel="stylesheet" />
-        <title>Document</title>
+        <title>FoundIt</title>
     </head>
     
     <body>
+        <script type="text/javascript">
+            function referToOtherPlace(dest) {
+                window.location.href = dest;
+            }
+        
+            </script>
         <div class="screen_bg">
-                <div class="log_in_button">
+                <div class="log_in_button"  onclick="referToOtherPlace('home.html')">
                     <span class="log_in_text">Log in</span>
                 </div>
                 <span class="first_timer_text">First-timer?</span>
                 <span class="been_here_text">Been here before?</span>
-                <div class="create_profile_button">
+                <div class="create_profile_button"  onclick="referToOtherPlace('home.html')">
                     <span class="create_profile_text">Create Profile</span>
                 </div>
                 <div class="logo">
